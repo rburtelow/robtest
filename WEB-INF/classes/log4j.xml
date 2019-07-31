@@ -1,0 +1,6 @@
+<appender name="MYLOGFILE" class="org.apache.log4j.DailyRollingFileAppender">
+    <param name="File" value="${jboss.server.log.dir}/robtest.log"/>
+    <param name="Append" value="false"/>
+    <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+    <layout class="net.logstash.log4j.JSONEventLayout"/>
+</appender>
